@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apress.isf.spring.test.MyDocumentsAOPTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-03-13T21:23:38" hostname="dbbvs-LM82" time="0.614">
+  <properties/>
+  <testcase name="testUsingSpringAOPCaching" classname="com.apress.isf.spring.test.MyDocumentsAOPTest" time="0.612"/>
+  <testcase name="testUsingSpringAOP" classname="com.apress.isf.spring.test.MyDocumentsAOPTest" time="0.002"/>
+  <system-out><![CDATA[2017-03-13 17:23:39,382 DEBUG [Test worker] Testing Caching Module... 
+2017-03-13 17:23:39,388 DEBUG [Test worker] @@@(Caching) review if this call is cachable... 
+2017-03-13 17:23:39,388 DEBUG [Test worker] @@@(Caching) Is cachable!! 
+2017-03-13 17:23:39,388 DEBUG [Test worker] @@@(Caching) Not Found! but is cachable! 
+2017-03-13 17:23:39,414 DEBUG [Test worker] It should be now cached! 
+2017-03-13 17:23:39,414 DEBUG [Test worker] @@@(Caching) review if this call is cachable... 
+2017-03-13 17:23:39,414 DEBUG [Test worker] @@@(Caching) Is cachable!! 
+2017-03-13 17:23:39,414 DEBUG [Test worker] @@@(Caching) Found in Cache! 
+2017-03-13 17:23:39,414 DEBUG [Test worker] It should be now cached! 
+2017-03-13 17:23:39,414 DEBUG [Test worker] @@@(Caching) review if this call is cachable... 
+2017-03-13 17:23:39,414 DEBUG [Test worker] @@@(Caching) Is cachable!! 
+2017-03-13 17:23:39,414 DEBUG [Test worker] @@@(Caching) Found in Cache! 
+2017-03-13 17:23:39,417 DEBUG [Test worker] Using Spring AOP: 
+2017-03-13 17:23:39,418 DEBUG [Test worker] @@@(Caching) review if this call is cachable... 
+2017-03-13 17:23:39,418 DEBUG [Test worker] @@@(Caching) Is cachable!! 
+2017-03-13 17:23:39,418 DEBUG [Test worker] @@@(Caching) Found in Cache! 
+2017-03-13 17:23:39,418 DEBUG [Test worker] @@@(Caching) review if this call is cachable... 
+2017-03-13 17:23:39,418 DEBUG [Test worker] @@@(Caching) review if this call is cachable... 
+2017-03-13 17:23:39,418 ERROR [Test worker] findByLocation not yet implemented. 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

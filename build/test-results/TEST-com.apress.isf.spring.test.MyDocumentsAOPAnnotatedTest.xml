@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apress.isf.spring.test.MyDocumentsAOPAnnotatedTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-03-13T21:23:55" hostname="dbbvs-LM82" time="0.509">
+  <properties/>
+  <testcase name="testUsingSpringAOPAnnotated" classname="com.apress.isf.spring.test.MyDocumentsAOPAnnotatedTest" time="0.508"/>
+  <testcase name="testUsingSpringAOPCachingAnnotated" classname="com.apress.isf.spring.test.MyDocumentsAOPAnnotatedTest" time="0.0"/>
+  <system-out><![CDATA[2017-03-13 17:23:55,941 DEBUG [Test worker] Using Spring AOP: 
+2017-03-13 17:23:55,944 ERROR [Test worker] findByLocation not yet implemented. 
+2017-03-13 17:23:55,946 DEBUG [Test worker] Testing Caching Module... 
+2017-03-13 17:23:55,946 DEBUG [Test worker] It should be now cached! 
+2017-03-13 17:23:55,946 DEBUG [Test worker] It should be now cached! 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apress.isf.spring.test.MyDocumentsAnnotatedTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-13T21:22:44" hostname="dbbvs-LM82" time="0.642">
+  <properties/>
+  <testcase name="testWithAnnotationsAll" classname="com.apress.isf.spring.test.MyDocumentsAnnotatedTest" time="0.642"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
