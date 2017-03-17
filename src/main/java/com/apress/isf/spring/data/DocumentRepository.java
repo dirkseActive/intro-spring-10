@@ -1,30 +1,61 @@
-/**
- * 
- */
 package com.apress.isf.spring.data;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
+import javax.sql.DataSource;
+
 import com.apress.isf.java.model.Document;
+import com.apress.isf.java.model.Type;
 
 /**
- * @since 3/31/2017
+ * @since 3/17/2017
  *
  */
+
 public class DocumentRepository implements DocumentDAO {
-	private List<Document> documents = null;
 	
-	public List<Document> getDocuments() {
-		return documents;
+	private DataSource dataSource;
+	
+	public void setDataSource(DataSource dataSource){
+		this.dataSource = dataSource;
 	}
-
-	public void setDocuments(List<Document> documents) {
-		this.documents = documents;
-	}
-
-	public Document[] getAll() {
-		Document[] result = documents.toArray(new Document[documents.size()]);
+	
+	public List<Document> getAll(){
+		List<Document> result = new ArrayList<Document>();
+		Connection connection = null;
+		Statement statement = null;
+		ResultSet resultSet = null;
+		Document document = null;
+		Type type = null;
+		try{
+			connection = dataSource.getConnection();
+			statement = connection.createStatement();
+			resultSet = statement.executeQuery("select * from documents");
+			while (resultSet.next()){
+				document = new Document();
+				document.setDocumentId(resultSet.getString("documentId"));
+				document.setName(resultSet.getString("name"));
+				document.setLocation(resultSet.getString("location"));
+				document.setCreated(resultSet.getDate("created"));
+				document.setModified(resultSet.getDate("modified"));
+				document.setDescription("doc_desc");
+				result.add(document);
+			}
+		} catch(SQLException ex){
+			throw new RuntimeException(ex);
+		} finally {
+			if (null != connection){
+				try {
+					connection.close();
+				} catch (SQLException ex){
+				}
+			}
+		}
 		return result;
 	}
-
 }

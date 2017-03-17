@@ -1,15 +1,28 @@
 package com.apress.isf.java.model;
 
 /**
- * @since 3/31/2017
+ * @since 3/17/2017
  *
  */
 
 public class Type {
-	
-	private String name;	
+
+	private String typeId;
+	private String name;
 	private String desc;
 	private String extension;
+
+	public Type() {
+
+	}
+
+	public String getTypeId() {
+		return typeId;
+	}
+
+	public void setTypeId(String typeId) {
+		this.typeId = typeId;
+	}
 
 	public String getName() {
 		return name;
@@ -34,16 +47,19 @@ public class Type {
 	public void setExtension(String extension) {
 		this.extension = extension;
 	}
-	
-	public String toString(){
-		StringBuilder builder = new StringBuilder("Type(");
-		builder.append("name: ");
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Type [typeId=");
+		builder.append(typeId);
+		builder.append(", name=");
 		builder.append(name);
-		builder.append(", description: ");
+		builder.append(", desc=");
 		builder.append(desc);
-		builder.append(", extension: ");
+		builder.append(", extension=");
 		builder.append(extension);
-		builder.append(")");
+		builder.append("]");
 		return builder.toString();
 	}
 }
