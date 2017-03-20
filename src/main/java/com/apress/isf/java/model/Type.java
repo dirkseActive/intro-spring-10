@@ -15,6 +15,12 @@ public class Type {
 	public Type() {
 
 	}
+	
+	public Type(String name,String extension){
+		this.name = name;
+		this.extension = extension;
+	}
+
 
 	public String getTypeId() {
 		return typeId;
