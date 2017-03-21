@@ -1,5 +1,0 @@
-@2017-03-13 17:23:55,941 DEBUG [Test worker] Using Spring AOP: 
-R2017-03-13 17:23:55,944 ERROR [Test worker] findByLocation not yet implemented. 
-H2017-03-13 17:23:55,946 DEBUG [Test worker] Testing Caching Module... 
-G2017-03-13 17:23:55,946 DEBUG [Test worker] It should be now cached! 
-G2017-03-13 17:23:55,946 DEBUG [Test worker] It should be now cached! 

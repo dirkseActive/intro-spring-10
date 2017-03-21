@@ -37,7 +37,7 @@ public class AnnotatedSearchEngine implements SearchEngine {
 	}
 	
 	public List<Document> listAll() {
-		List<Document> result = Arrays.asList(documentDAO.getAll());
+		List<Document> result = documentDAO.getAll();
 		return result;
 	}
 	
