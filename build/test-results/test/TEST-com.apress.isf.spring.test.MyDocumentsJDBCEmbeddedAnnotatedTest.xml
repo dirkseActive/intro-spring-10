@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.apress.isf.spring.test.MyDocumentsJDBCEmbeddedAnnotatedTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-28T16:40:49" hostname="dbbvs-LM82" time="0.301">
+  <properties/>
+  <testcase name="testJDBCEmbedded" classname="com.apress.isf.spring.test.MyDocumentsJDBCEmbeddedAnnotatedTest" time="0.301"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

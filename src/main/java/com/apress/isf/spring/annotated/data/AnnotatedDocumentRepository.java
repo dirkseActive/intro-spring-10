@@ -23,8 +23,8 @@ import com.apress.isf.spring.data.DocumentDAO;
 @Repository("documentDAO")
 public class AnnotatedDocumentRepository implements DocumentDAO {
 	
-	private static final String queryAll = "select d.documentId, d.name, d.location " +
-	"d.description as doc_desc, d.typeId, d.created, d.modified, t.name as type_name " +
+	private static final String queryAll = "select d.documentId, d.name, d.location, " +
+	"d.description as doc_desc, d.typeId, d.created, d.modified, t.name as type_name, " +
 			"t.description as type_desc, t.extension FROM documents d "
 			+ "JOIN types t on d.typeId = t.typeId";
 	
